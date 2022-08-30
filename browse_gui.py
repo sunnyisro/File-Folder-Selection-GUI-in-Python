@@ -15,15 +15,15 @@ from tkinter import filedialog
 ...
 
 def browse_folder():
-    directory = filedialog.askdirectory(initialdir = '/',
+    directory = filedialog.askdirectory(initialdir = '~/',
                                         title = 'Select the Path Folder'
                                        )
     return directory
 
 
 def browse_file():
-    filename = filedialog.askopenfilename(initialdir = '/',
-                                          title = 'Select the File',
-                                          filetypes = (('all files','*.*'), ('text files', '*.txt*'))
+    filename = filedialog.askopenfilename(initialdir = '~/',
+                                          title = 'Select the File'
+                                          #filetypes = (('all files','*.*'), ('text files', '*.txt*'))
                                          )
     return filename
